@@ -3,15 +3,7 @@
   <p>-You</p>
 </div>
 <div class="border-start border-5 alert alert-warning">
-  <% good_message = "i am going to work" %>
-  <% message_user = params[:question] %>
-  <% if message_user == good_message || message_user == good_message.capitalize %>
-  <%= "Great!" %>
-  <% elsif message_user.end_with?("?") %>
-  <%= "Silly question, get dressed and go to work!" %>
-  <% else %>
-  <strong><%= "I don't care, get dressed and go to work!" %></strong>
-  <% end %>
+  <strong><%= @response_coach %></strong>
   <p>-Your coach</p>
 </div>
 <%= link_to "Ask a new question", ask_path %>

@@ -12,6 +12,7 @@ class QuestionsTest < ApplicationSystemTestCase
       click_on "Ask"
 
       assert_text "I don't care, get dressed and go to work!"
+      take_screenshot
     end
 
     test "saying the right sentence yields great from the coach" do
@@ -20,6 +21,7 @@ class QuestionsTest < ApplicationSystemTestCase
       click_on "Ask"
 
       assert_text "Great!"
+      take_screenshot
     end
 
     test "saying a question yields a grumpy response from the coach" do
@@ -28,5 +30,6 @@ class QuestionsTest < ApplicationSystemTestCase
       click_on "Ask"
 
       assert_text "Silly question, get dressed and go to work!"
+      take_screenshot
     end
 end
